@@ -8,155 +8,179 @@ opciones n = do
        
         putStrLn("---                  Menú               --- ")
        
-        putStrLn "1.- dia"
-        putStrLn "2.- mes"
+        putStrLn "Ingresa mes en que naciste"
+        -- putStrLn "2.- mes"
         
         opc <- getLine
         putStrLn ("__________________________________________")
         case opc of
-            "1" -> dia
-            "2" -> mes
-            -- "3" -> factorial
-            -- "4" -> desapareceNumeros
-            -- "5" -> palindromos 
-            -- "6" -> calculadora
-            -- "7" -> opciones False
+            "1" -> ene
+            "2" -> feb
+            "3" -> mar
+            "4" -> abr
+            "5" -> may
+            "6" -> jun
+            "7" -> jul
+            "8" -> ago
+            "9" -> sep
+            "10" -> oct
+            "11" -> nov
+            "12" -> dic
             _ -> opciones True
     else
         putStrLn "Fin del Programa"
 
-dia = do
+ene = do
     
 
 -- opciones n = do
     putStrLn("Introduce tu dia de nacimiento: ")
     n <- getLine
     let a= read n:: Int
-    if a < 30 &&  a>0
+    if a <= 31 &&  a>0
         then
-            putStrLn("tu dia es valido"++show a)
+            putStrLn("naciste en enero y el dia"++show a)
            
     else
         putStrLn("no es valido vielve a ingresar un dia")        
     opciones True   
-
-mes =do    
-
-    putStrLn("Introduce tu mes de nacimiento: ")
-    c <- getLine
-    let d= read c:: Int
-
-    if d < 12 &&  d>0 &&  d==1
+    
+   
+feb =do  
+    putStrLn("Introduce tu dia de nacimiento: ")
+    n <- getLine
+    let a= read n:: Int
+    if a <= 28 &&  a>0
         then
-            putStrLn("naciste en enero")
+            putStrLn("naciste en febrero y el dia:"++show a)
+            
+           
     else
-        -- print("naciste"++show d)
-        putStrLn("nacieste en")    
-
-    if d < 12 &&  d>0 &&  d==2
+        putStrLn("no es valido vielve a ingresar un mes")        
+    opciones True     
+mar =do  
+    putStrLn("Introduce tu dia de nacimiento: ")
+    n <- getLine
+    let a= read n:: Int
+    if a <= 31 &&  a>0
         then
-            putStrLn("naciste en febrero")
+            putStrLn("naciste en marzo y el dia:"++show a)
+            
+           
     else
-        -- print("naciste"++show d)
-        putStrLn("nacieste en febrero")     
-    opciones True   
-
-    -- 3
-    if d < 12 &&  d>0 &&  d==3
-        then
-            putStrLn("naciste en marzo")
-    else
-        -- print("naciste"++show d)
-        putStrLn("nacieste en marzo")     
-    opciones True   
-    -- 4
-    if d < 12 &&  d>0 &&  d==4
-        then
-            putStrLn("naciste en abril")
-    else
-        -- print("naciste"++show d)
-        putStrLn("nacieste en abril")     
+        putStrLn("no es valido vielve a ingresar un mes")        
     opciones True  
 
-    -- 5
-    if d < 12 &&  d>0 &&  d==5
+abr =do  
+    putStrLn("Introduce tu dia de nacimiento: ")
+    n <- getLine
+    let a= read n:: Int
+    if a <= 30 &&  a>0
         then
-            putStrLn("naciste en mayo")
+            putStrLn("naciste en abril y el dia:"++show a)
+            
+           
     else
-        -- print("naciste"++show d)
-        putStrLn("nacieste en mayo")     
-    opciones True 
+        putStrLn("no es valido vielve a ingresar un mes")        
+    opciones True      
 
-    -- 6
-    if d < 12 &&  d>0 &&  d==6
+may =do  
+    putStrLn("Introduce tu dia de nacimiento: ")
+    n <- getLine
+    let a= read n:: Int
+    if a <= 31 &&  a>0
         then
-            putStrLn("naciste en junio")
+            putStrLn("naciste en mayo y el dia:"++show a)
+            
+           
     else
-        -- print("naciste"++show d)
-        putStrLn("nacieste en junio")     
-    opciones True 
+        putStrLn("no es valido vielve a ingresar un mes")        
+    opciones True      
+jun =do  
+    putStrLn("Introduce tu dia de nacimiento: ")
+    n <- getLine
+    let a= read n:: Int
+    if a <= 30 &&  a>0
+        then
+            putStrLn("naciste en junio y el dia:"++show a)
+            
+           
+    else
+        putStrLn("no es valido vielve a ingresar un mes")        
+    opciones True        
+jul =do  
+    putStrLn("Introduce tu dia de nacimiento: ")
+    n <- getLine
+    let a= read n:: Int
+    if a <= 31 &&  a>0
+        then
+            putStrLn("naciste en julio y el dia:"++show a)
+            
+           
+    else
+        putStrLn("no es valido vielve a ingresar un mes")        
+    opciones True    
+ago =do  
+    putStrLn("Introduce tu dia de nacimiento: ")
+    n <- getLine
+    let a= read n:: Int
+    if a <= 31 &&  a>0
+        then
+            putStrLn("naciste en agosto y el dia:"++show a)
+            
+           
+    else
+        putStrLn("no es valido vielve a ingresar un mes")        
+    opciones True  
+sep =do  
+    putStrLn("Introduce tu dia de nacimiento: ")
+    n <- getLine
+    let a= read n:: Int
+    if a <= 30 &&  a>0
+        then
+            putStrLn("naciste en septiembre y el dia:"++show a)
+            
+           
+    else
+        putStrLn("no es valido vielve a ingresar un mes")        
+    opciones True    
+oct =do  
+    putStrLn("Introduce tu dia de nacimiento: ")
+    n <- getLine
+    let a= read n:: Int
+    if a <= 31 &&  a>0
+        then
+            putStrLn("naciste en octubre y el dia:"++show a)
+            
+           
+    else
+        putStrLn("no es valido vielve a ingresar un mes")        
+    opciones True    
+nov =do  
+    putStrLn("Introduce tu dia de nacimiento: ")
+    n <- getLine
+    let a= read n:: Int
+    if a <= 30 &&  a>0
+        then
+            putStrLn("naciste en noviembre y el dia:"++show a)
+            
+           
+    else
+        putStrLn("no es valido vielve a ingresar un mes")        
+    opciones True  
+dic =do  
+    putStrLn("Introduce tu dia de nacimiento: ")
+    n <- getLine
+    let a= read n:: Int
+    if a <= 31 &&  a>0
+        then
+            putStrLn("naciste en diciembre y el dia:"++show a)
+            
+           
+    else
+        putStrLn("no es valido vielve a ingresar un mes")        
+    opciones True     
 
-    -- 7
-    if d < 12 &&  d>0 &&  d==7
-        then
-            putStrLn("naciste en julio")
-    else
-        -- print("naciste"++show d)
-        putStrLn("nacieste en julio")     
-    opciones True 
 
-    -- 8
-    if d < 12 &&  d>0 &&  d==8
-        then
-            putStrLn("naciste en agosto")
-    else
-        -- print("naciste"++show d)
-        putStrLn("nacieste en agosto")     
-    opciones True 
-
-    -- 9
-    if d < 12 &&  d>0 &&  d==9
-        then
-            putStrLn("naciste en septiembre")
-    else
-        -- print("naciste"++show d)
-        putStrLn("nacieste en septiembre")     
-    opciones True 
-
-    -- 10
-    if d < 12 &&  d>0 &&  d==10
-        then
-            putStrLn("naciste en octubre")
-    else
-        -- print("naciste"++show d)
-        putStrLn("nacieste en octubre")     
-    opciones True 
-
-    -- 11
-    if d < 12 &&  d>0 &&  d==11
-        then
-            putStrLn("naciste en noviembre")
-    else
-        -- print("naciste"++show d)
-        putStrLn("nacieste en noviembre")     
-    opciones True 
-
-    -- 12
-    if d < 12 &&  d>0 &&  d==12
-        then
-            putStrLn("naciste en diciembre")
-    else
-        -- print("naciste"++show d)
-        putStrLn("nacieste en diciembre")     
-    opciones True
-
-    -- error
-    if d > 12 &&  d<0 
-        then
-            putStrLn("error no acepto ese mes")
-    else
-        -- print("naciste"++show d)
-        putStrLn("no existe ese mes")     
-    opciones True
               
               
